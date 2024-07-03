@@ -1,52 +1,68 @@
-# MY REACT SHOP - A MERN Example
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Summary of the demo
+## Available Scripts
 
-In this demo you will see:
+In the project directory, you can run:
 
-- How to build a React web application to simulate an eCommerce
-- How to build a NodeJS backend application to simulate an eCommerce
-- Adding Open Telemetry traces
+### `npm start`
 
-## Requirements
+Runs the app in the development mode.<br>
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-- NodeJS 16.x installed
-- A container running a Mongo instance. Check [this tutorial](https://luturol.github.io/docker/mongodb/Using-MongoDB-with-Docker) for more.
+The page will reload if you make edits.<br>
+You will also see any lint errors in the console.
 
-## Run this demo locally
+### `npm test`
 
-1. Make `dev.js` file inside `config` folder
-2. Add mongoDB info into dev.js file.
+Launches the test runner in the interactive watch mode.<br>
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-```
-module.exports = {
-    mongoURI:'mongodb://user:password@localhost:27017'
-}
-```
+### `npm run build`
 
-3. Type `npm install` inside the root directory, to download server-side dependencies.
+Builds the app for production to the `build` folder.<br>
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-4. Type `npm install` inside the client directory, to download front-end dependencies.
+The build is minified and the filenames include the hashes.<br>
+Your app is ready to be deployed!
 
-5. Create an `upload` folder in the root of this project
-6. If you want to prepopulate the eCommerce you can copy all the files in `data/images` to the `upload` folder.
-7. Use mongo restore to restore the database dump in the `data/dump` folder.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-```
-mongorestore --uri="mongodb://<user>:<password>@localhost:27017" dump/
-```
+### `npm run eject`
 
-8. Run in the terminal
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-```
-npm run dev
-```
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-### How to develop this project
+Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-The React part of this code repo is inspired in a YouTube tutorial.
-You can watch [the tutorial](https://www.youtube.com/watch?v=zaWtIkJgah4&t=5569s) to learn to build this application.
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Migrate to serverless
+## Learn More
 
-This code repository is part of a series of videos. In this series you will learn how to migrate this MERN application to Serverless on AWS. You can follow the whole series in this [playlist](https://www.youtube.com/playlist?list=PLGyRwGktEFqe2ga9UmQSBr5xdfVyiDPW6)
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+
+### Analyzing the Bundle Size
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+
+### Making a Progressive Web App
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+
+### Advanced Configuration
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `npm run build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
